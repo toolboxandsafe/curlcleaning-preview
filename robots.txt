@@ -1,0 +1,11 @@
+# Curl House Cleaning - robots.txt
+# https://curlcleaning.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://toolboxandsafe.github.io/curlcleaning-preview/sitemap.xml
+
+# Block utility pages from indexing
+Disallow: /thanks.html
