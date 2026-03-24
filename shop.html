@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Add-On Services & Gift Cards | Curl House Cleaning</title>
+    <meta name="description" content="Purchase add-on cleaning services, gift cards, and tip your cleaners. Fridge cleaning, oven cleaning, garage cleaning, laundry service & more.">
+    <link rel="stylesheet" href="enhancements.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Header */
+        header { background: #2ecc71; color: white; padding: 1rem 0; position: sticky; top: 0; z-index: 100; }
+        header .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+        .logo { font-size: 1.5rem; font-weight: bold; text-decoration: none; color: white; }
+        .logo span { color: #fff; opacity: 0.9; font-weight: normal; }
+        nav a { color: white; text-decoration: none; margin-left: 1.5rem; font-weight: 500; }
+        nav a:hover { text-decoration: underline; }
+        .header-cta { background: white; color: #2ecc71; padding: 0.5rem 1rem; border-radius: 5px; text-decoration: none; font-weight: bold; }
+        
+        /* Page Header */
+        .page-header { background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%); color: white; padding: 3rem 0; text-align: center; }
+        .page-header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .page-header p { font-size: 1.2rem; opacity: 0.9; }
+        
+        /* Shop Grid */
+        .shop-section { padding: 4rem 0; }
+        .shop-section h2 { text-align: center; font-size: 1.8rem; color: #2ecc71; margin-bottom: 2rem; }
+        .shop-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 4rem; }
+        
+        /* Product Card */
+        .product-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border: 2px solid #eee; transition: transform 0.3s, box-shadow 0.3s; }
+        .product-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.12); border-color: #2ecc71; }
+        .product-image { background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%); height: 180px; display: flex; align-items: center; justify-content: center; font-size: 4rem; }
+        .product-content { padding: 1.5rem; }
+        .product-content h3 { color: #333; margin-bottom: 0.5rem; font-size: 1.2rem; }
+        .product-price { color: #2ecc71; font-size: 1.4rem; font-weight: bold; margin-bottom: 0.75rem; }
+        .product-price .range { font-size: 1rem; color: #666; font-weight: normal; }
+        .product-content p { color: #666; font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.5; }
+        .add-to-cart { display: block; width: 100%; background: #2ecc71; color: white; border: none; padding: 0.9rem; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: background 0.3s; text-align: center; text-decoration: none; }
+        .add-to-cart:hover { background: #27ae60; }
+        .select-options { background: #f39c12; }
+        .select-options:hover { background: #e67e22; }
+        
+        /* Footer */
+        footer { background: #2c3e50; color: white; padding: 3rem 0 1rem; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-bottom: 2rem; }
+        .footer-col h4 { margin-bottom: 1rem; color: #2ecc71; }
+        .footer-col a { color: #bbb; text-decoration: none; display: block; margin-bottom: 0.5rem; }
+        .footer-col a:hover { color: #2ecc71; }
+        .footer-bottom { text-align: center; padding-top: 2rem; border-top: 1px solid #3d5166; color: #888; }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .page-header h1 { font-size: 2rem; }
+            .shop-grid { grid-template-columns: 1fr; }
+            nav { display: none; }
+        }
+
+        /* Notice Banner */
+        .notice-banner { background: #fff3cd; border: 1px solid #ffc107; color: #856404; padding: 1rem; text-align: center; margin-bottom: 2rem; border-radius: 8px; }
+        .notice-banner strong { color: #856404; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">🧹 Curl <span>House Cleaning</span></a>
+            <nav>
+                <a href="services.html">Services</a>
+                <a href="areas.html">Areas</a>
+                <a href="about.html">About</a>
+                <a href="shop.html">Shop</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <a href="quote.html" class="header-cta">Get Quote</a>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>🛒 Shop Add-On Services</h1>
+            <p>Purchase gift cards, add-on services, and tip your cleaning crew</p>
+        </div>
+    </div>
+
+    <main class="shop-section">
+        <div class="container">
+            
+            <div class="notice-banner">
+                <strong>📝 Preview Mode:</strong> This is a preview of the new shop page. Buttons link to the live store for purchasing.
+            </div>
+
+            <h2>🎁 Gift Cards & Tips</h2>
+            <div class="shop-grid">
+                
+                <!-- Gift Card -->
+                <div class="product-card">
+                    <div class="product-image">🎁</div>
+                    <div class="product-content">
+                        <h3>Gift Card</h3>
+                        <div class="product-price">$165.00 – $400.00</div>
+                        <p>For friends, family, or that person who "has everything". A house cleaning gift card from Curl Cleaning is perfect for any occasion.</p>
+                        <a href="https://curlcleaning.com/product/gift-card/" class="add-to-cart select-options">Select Options</a>
+                    </div>
+                </div>
+
+                <!-- Tip Your Cleaners -->
+                <div class="product-card">
+                    <div class="product-image">💝</div>
+                    <div class="product-content">
+                        <h3>Tip Your Cleaners!</h3>
+                        <div class="product-price">$10.00 – $50.00</div>
+                        <p>Are you so happy and satisfied with your last cleaning and want to show your cleaning crew some appreciation? Select the amount below and we'll pass it along to them!</p>
+                        <a href="https://curlcleaning.com/product/tips/" class="add-to-cart select-options">Select Options</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <h2>🧽 Add-On Cleaning Services</h2>
+            <div class="shop-grid">
+
+                <!-- Fridge Cleaning -->
+                <div class="product-card">
+                    <div class="product-image">🧊</div>
+                    <div class="product-content">
+                        <h3>Fridge Cleaning Inside</h3>
+                        <div class="product-price">$49.00</div>
+                        <p>Inside cleaning of your fridge. We ask that you purge expired goods so we can do the best job. We remove everything, take out shelves and drawers, then wash and rinse them.</p>
+                        <a href="https://curlcleaning.com/product/fridge-cleaning-inside/" class="add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+
+                <!-- Oven Cleaning -->
+                <div class="product-card">
+                    <div class="product-image">🔥</div>
+                    <div class="product-content">
+                        <h3>Oven Cleaning</h3>
+                        <div class="product-price">$30.00</div>
+                        <p>Have you had enough with that burnt smell each time you turn on your oven? We perform a top-to-bottom oven cleaning—racks, liners, carbon deposits, and baked-on grime.</p>
+                        <a href="https://curlcleaning.com/product/oven-cleaning/" class="add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+
+                <!-- Garage Cleaning -->
+                <div class="product-card">
+                    <div class="product-image">🚗</div>
+                    <div class="product-content">
+                        <h3>Inside of Garage Light Cleaning</h3>
+                        <div class="product-price">$59.00 – $99.00</div>
+                        <p>Let Curl Cleaning freshen up your garage! Select your garage size for pricing. We charge $30 extra if not combined with a house cleaning.</p>
+                        <a href="https://curlcleaning.com/product/inside-garage-light-cleaning/" class="add-to-cart select-options">Select Options</a>
+                    </div>
+                </div>
+
+                <!-- Patio Cleaning -->
+                <div class="product-card">
+                    <div class="product-image">🏡</div>
+                    <div class="product-content">
+                        <h3>Patio Cleaning</h3>
+                        <div class="product-price">$40.00 – $70.00</div>
+                        <p>Get your patio furniture ready for the next outing event! We typically only do this type of cleaning during the cooler months (October to May).</p>
+                        <a href="https://curlcleaning.com/product/patio-cleaning/" class="add-to-cart select-options">Select Options</a>
+                    </div>
+                </div>
+
+                <!-- Laundry -->
+                <div class="product-card">
+                    <div class="product-image">👕</div>
+                    <div class="product-content">
+                        <h3>Laundry</h3>
+                        <div class="product-price">$10.00 <span class="range">per load/basket</span></div>
+                        <p>We wash, dry, and fold everything. Just leave your laundry baskets ready and we'll take care of the rest while cleaning your home.</p>
+                        <a href="https://curlcleaning.com/product/laundry/" class="add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+
+                <!-- Linen Closet -->
+                <div class="product-card">
+                    <div class="product-image">🧺</div>
+                    <div class="product-content">
+                        <h3>Linen Closet</h3>
+                        <div class="product-price">$20.00</div>
+                        <p>This area is one that many clients put aside and forget about. We clean the space, sort and organize your linens, and store sheet sets in corresponding pillowcases.</p>
+                        <a href="https://curlcleaning.com/product/linen-closet/" class="add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <a href="routine-cleaning.html">Routine Cleaning</a>
+                    <a href="deep-cleaning.html">Deep Cleaning</a>
+                    <a href="move-cleaning.html">Move In/Out</a>
+                    <a href="commercial-cleaning.html">Commercial</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="about.html">About Us</a>
+                    <a href="careers.html">Careers</a>
+                    <a href="reviews.html">Reviews</a>
+                    <a href="faq.html">FAQ</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="quote.html">Get a Quote</a>
+                    <a href="gift-cards.html">Gift Cards</a>
+                    <a href="refer.html">Refer a Friend</a>
+                    <a href="tips.html">Tip Your Cleaner</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>📞 <a href="tel:623-335-0962" style="color: #2ecc71;">623-335-0962</a></p>
+                    <p>📧 <a href="mailto:info@curlcleaning.com">info@curlcleaning.com</a></p>
+                    <p>📍 Serving Phoenix Metro Area</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Curl House Cleaning. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
