@@ -33,7 +33,9 @@
         /* Product Card */
         .product-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border: 2px solid #eee; transition: transform 0.3s, box-shadow 0.3s; }
         .product-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.12); border-color: #2ecc71; }
-        .product-image { background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%); height: 180px; display: flex; align-items: center; justify-content: center; font-size: 4rem; }
+        .product-image { background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%); height: 200px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+        .product-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; }
+        .product-card:hover .product-image img { transform: scale(1.05); }
         .product-content { padding: 1.5rem; }
         .product-content h3 { color: #333; margin-bottom: 0.5rem; font-size: 1.2rem; }
         .product-price { color: #2ecc71; font-size: 1.4rem; font-weight: bold; margin-bottom: 0.75rem; }
@@ -98,7 +100,9 @@
                 
                 <!-- Gift Card -->
                 <div class="product-card">
-                    <div class="product-image">🎁</div>
+                    <div class="product-image">
+                        <img src="images/products/gift-card.jpg" alt="Curl Cleaning Gift Card" loading="lazy">
+                    </div>
                     <div class="product-content">
                         <h3>Gift Card</h3>
                         <div class="product-price">$165.00 – $400.00</div>
@@ -109,7 +113,9 @@
 
                 <!-- Tip Your Cleaners -->
                 <div class="product-card">
-                    <div class="product-image">💝</div>
+                    <div class="product-image">
+                        <img src="images/products/tips.jpg" alt="Tip Your Cleaners" loading="lazy">
+                    </div>
                     <div class="product-content">
                         <h3>Tip Your Cleaners!</h3>
                         <div class="product-price">$10.00 – $50.00</div>
@@ -125,7 +131,9 @@
 
                 <!-- Fridge Cleaning -->
                 <div class="product-card">
-                    <div class="product-image">🧊</div>
+                    <div class="product-image">
+                        <img src="images/products/fridge-cleaning.jpg" alt="Fridge Cleaning Service" loading="lazy">
+                    </div>
                     <div class="product-content">
                         <h3>Fridge Cleaning Inside</h3>
                         <div class="product-price">$49.00</div>
@@ -136,7 +144,9 @@
 
                 <!-- Oven Cleaning -->
                 <div class="product-card">
-                    <div class="product-image">🔥</div>
+                    <div class="product-image">
+                        <img src="images/products/oven-cleaning.jpg" alt="Oven Cleaning Service" loading="lazy">
+                    </div>
                     <div class="product-content">
                         <h3>Oven Cleaning</h3>
                         <div class="product-price">$30.00</div>
@@ -147,7 +157,9 @@
 
                 <!-- Garage Cleaning -->
                 <div class="product-card">
-                    <div class="product-image">🚗</div>
+                    <div class="product-image">
+                        <img src="images/products/garage-cleaning.jpg" alt="Garage Cleaning Service" loading="lazy">
+                    </div>
                     <div class="product-content">
                         <h3>Inside of Garage Light Cleaning</h3>
                         <div class="product-price">$59.00 – $99.00</div>
@@ -158,7 +170,9 @@
 
                 <!-- Patio Cleaning -->
                 <div class="product-card">
-                    <div class="product-image">🏡</div>
+                    <div class="product-image">
+                        <img src="images/products/patio-cleaning.jpg" alt="Patio Cleaning Service" loading="lazy">
+                    </div>
                     <div class="product-content">
                         <h3>Patio Cleaning</h3>
                         <div class="product-price">$40.00 – $70.00</div>
@@ -169,7 +183,9 @@
 
                 <!-- Laundry -->
                 <div class="product-card">
-                    <div class="product-image">👕</div>
+                    <div class="product-image">
+                        <img src="images/products/laundry.jpg" alt="Laundry Service" loading="lazy">
+                    </div>
                     <div class="product-content">
                         <h3>Laundry</h3>
                         <div class="product-price">$10.00 <span class="range">per load/basket</span></div>
@@ -180,7 +196,9 @@
 
                 <!-- Linen Closet -->
                 <div class="product-card">
-                    <div class="product-image">🧺</div>
+                    <div class="product-image">
+                        <img src="images/products/linen-closet.jpg" alt="Linen Closet Organization" loading="lazy">
+                    </div>
                     <div class="product-content">
                         <h3>Linen Closet</h3>
                         <div class="product-price">$20.00</div>
